@@ -1,3 +1,4 @@
+
 # Import libraries
 from preprocessing import preprocess
 import streamlit as st
@@ -49,18 +50,18 @@ def main():
     # Membuat Navbar
     st.markdown("""
     <header id="header">
-     <div class=" text-center container-fluid bg-gradient rounded mx-auto" style="background-color:rgb(255, 105, 97); ">
+     <div class=" text-center container-fluid bg-gradient rounded mx-auto" style="background-color:rgb(222, 243, 253); ">
           <img class="pt-3 text-center img-fluid" alt="icon" src="https://drive.google.com/uc?export=view&id=1D4ZtKppUv1buusCOdjG4cIcL0U6nHN6E" width="300">
           </img>
         <p class="fw-bold text-center text-black" style="font-size: 50px; padding-bottom: 40px; padding-top: 5px">
         </p>
      </div>   
-    <div class="container-fluid bg-black rounded-bottom mx-auto" style="margin-bottom:1px; margin-top:-45px">
+    <div class="container-fluid rounded-bottom mx-auto" style="margin-bottom:1px; margin-top:-45px; background-color:rgb(41, 43, 45)">
         <p class="fw-bold text-center text-light" style="font-size: 30px;"> 
             PREDIKSI PELANGGAN BERHENTI MENGGUNAKAN LAYANAN 
         </p>
     </div>
-    <div class="border-bottom rounded-3 container-fluid bg-black mx-auto" style=" margin-bottom: 0px; margin-top: -3px;">
+    <div class="border-bottom rounded-3 container-fluid mx-auto" style=" margin-bottom: 0px; margin-top: -3px; background-color:rgb(41, 43, 45)">
         <p class="fw-semibold text-center text-light" style="font-size: 25px; margin-bottom:5px "> 
             Menu 
         </p>
@@ -75,7 +76,7 @@ def main():
             menu_icon="list",
             orientation="horizontal",
             styles={
-            "container": {"text-align":"center", "background-color": "black", "margin": "auto"},
+            "container": {"text-align":"center", "background-color": "rgb(41, 43, 45)", "margin": "auto"},
             "icon": {"text-align":"center","color": "white", "font-size": "18px"}, 
             "nav-link": {"color":"white","font-size": "18px", "text-align": "center", "margin":"0px", "--hover-color": ""},
             "nav-link-selected": {"background-color": "" },  
