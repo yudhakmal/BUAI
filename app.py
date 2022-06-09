@@ -49,7 +49,7 @@ def main():
     # Membuat Navbar
     st.markdown("""
     <header id="header">
-     <div class=" text-center container-fluid bg-gradient rounded mx-auto" style="background-color:rgba(0, 157, 178, 0.996); ">
+     <div class=" text-center container-fluid bg-gradient rounded mx-auto" style="background-color:rgb(255, 105, 97); ">
           <img class="pt-3 text-center img-fluid" alt="icon" src="https://drive.google.com/uc?export=view&id=1D4ZtKppUv1buusCOdjG4cIcL0U6nHN6E" width="300">
           </img>
         <p class="fw-bold text-center text-black" style="font-size: 50px; padding-bottom: 40px; padding-top: 5px">
