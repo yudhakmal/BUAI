@@ -14,12 +14,14 @@ model = pickle.load(open(filename, "rb"))
 
 
 def main():
-
-    html = unsafe_allow_html=True
+    
+    # Load image
+    image = 'https://drive.google.com/file/d/1D4ZtKppUv1buusCOdjG4cIcL0U6nHN6E/view?usp=sharing'
+    icon = 'https://drive.google.com/uc?export=view&id=1PgzX6bI9TGrzf9znX1-KPik4Wg3xeCvK'
 
     st.set_page_config(
         page_title= "BUAI",
-        page_icon= "star",
+        page_icon= icon,
         layout= "wide",
         menu_items={
             'Get Help': None,
@@ -28,11 +30,9 @@ def main():
         }
 
     )
-    # Load image
-    #image = Image.open('')
 
-    #st.image(image, use_column_width="always")
-
+    html = unsafe_allow_html=True 
+    
     #Bootstrap css
     st.markdown("""
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
@@ -45,12 +45,14 @@ def main():
     </style> 
     """, html)
 
-    # Tittle, Navbar, dan Menu
+ 
+    # Membuat Navbar
     st.markdown("""
     <header id="header">
-     <div class="container-fluid bg-gradient rounded mx-auto" style="background-color:rgba(255, 0, 0, 0.633); ">
+     <div class=" text-center container-fluid bg-gradient rounded mx-auto" style="background-color:rgba(0, 157, 178, 0.996); ">
+          <img class="pt-3 text-center img-fluid" alt="icon" src="https://drive.google.com/uc?export=view&id=1D4ZtKppUv1buusCOdjG4cIcL0U6nHN6E" width="300">
+          </img>
         <p class="fw-bold text-center text-black" style="font-size: 50px; padding-bottom: 40px; padding-top: 5px">
-            BUAI
         </p>
      </div>   
     <div class="container-fluid bg-black rounded-bottom mx-auto" style="margin-bottom:1px; margin-top:-45px">
@@ -86,7 +88,7 @@ def main():
         #Membuat halaman menu Home
         if selected == "Home":
             st.markdown('<h1 class=" fw-bold text-center"> Selamat datang! </h1>', html)
-            st.markdown('<p class="heading3 text-center"> Ini merupakan aplikasi bla bla bla </p>', html)
+            st.markdown('<p class="heading3 text-center"> Silahkan pilih menu prediksi satuan atau batch pada menu </p>', html)
         
         #Membuat halaman menu Prediksi Satuan
         if selected == "Prediksi Satuan":
@@ -224,7 +226,7 @@ def main():
                         'Pelanggan akan bertahan menggunakan layanan.')
 
 
-
+    #Membuat halaman menu prediksi batch
     if selected == "Prediksi Batch":
         st.markdown("""<h2 class="fw-bold text-center"> Upload Dataset </h2>""", html)
         st.info("Silahkan masukkan dataset yang disesuaikan dengan nama kolom dan pilihan kategori dari contoh berikut:")
