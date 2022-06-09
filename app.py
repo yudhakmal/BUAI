@@ -29,7 +29,7 @@ def main():
 
     )
     # Load image
-    image = Image.open('App.jpg')
+    #image = Image.open('')
 
     #st.image(image, use_column_width="always")
 
