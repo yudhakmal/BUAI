@@ -5,5 +5,5 @@ echo "\
 " > ~/.streamlit/credentials.toml
 
 echo "\
-[server]\n\headless = true\n\enableCORS=false\n\port = $PORT\n\
+[server]\n\headless = true\n\enableCORS=false\n\port = \n\
 " > ~/.streamlit/config.toml
