@@ -78,7 +78,7 @@ def main():
             styles={
             "container": {"text-align":"center", "background-color": "rgb(41, 43, 45)", "margin": "auto"},
             "icon": {"text-align":"center","color": "white", "font-size": "18px"}, 
-            "nav-link": {"color":"white","font-size": "18px", "text-align": "center", "margin":"0px", "--hover-color": ""},
+            "nav-link": {"color":"white","font-size": "18px", "text-align": "center", "margin":"0px", "--hover-color": "rgb(26, 28, 29)"},
             "nav-link-selected": {"background-color": "" },  
             }
             )
